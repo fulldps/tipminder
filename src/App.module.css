@@ -1,8 +1,16 @@
-.div {
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fdfdfd;
+  font-family: Poppins;
+}
+
+.main {
   max-width: 1280px;
   padding-bottom: 82px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  margin-inline: auto;
+  flex: 1;
 }
