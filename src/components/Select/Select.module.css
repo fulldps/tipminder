@@ -1,6 +1,6 @@
-.input {
+.select {
   max-width: 584px;
-  width: 100%;
+  width: 100vw;
   height: 54px;
   padding: 16px;
   border: 1.5px solid #d5d5d5;

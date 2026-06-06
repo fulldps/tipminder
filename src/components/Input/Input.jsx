@@ -1,10 +1,16 @@
 import * as styles from "./Input.module.css";
 
-const Input = ({ title }) => {
+const Input = ({ name, id, type, value, onChange }) => {
   return (
     <>
-      <label htmlFor={title}>Company name</label>
-      <input id={title} className={styles.input} type="" name="" value="" />
+      <input
+        id={id}
+        className={styles.input}
+        type={type}
+        name={name}
+        value={value}
+        onChange={onChange}
+      />
     </>
   );
 };
