@@ -1,7 +1,7 @@
 import { useId } from "react";
 import * as styles from "./FormField.module.css";
 
-const FormField = ({ children, label }) => {
+export default function FormField({ children, label }) {
   const id = useId();
 
   return (
@@ -10,6 +10,4 @@ const FormField = ({ children, label }) => {
       {children(id)}
     </div>
   );
-};
-
-export default FormField;
+}

@@ -99,7 +99,7 @@ const mapper = (values) => {
   return { ...values, terminalMonthlyFee: Number(values.terminalMonthlyFee) };
 };
 
-const Form = () => {
+export default function Form() {
   const [values, setValues] = useState(INITIAL_VALUES);
 
   const handleChange = (name) => (e) => {
@@ -144,6 +144,4 @@ const Form = () => {
       </div>
     </form>
   );
-};
-
-export default Form;
+}

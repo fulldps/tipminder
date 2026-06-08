@@ -1,6 +1,6 @@
 import * as styles from "./Select.module.css";
 
-const Select = ({ options, name, id, value, onChange }) => {
+export default function Select({ options, name, id, value, onChange }) {
   return (
     <>
       <select
@@ -18,6 +18,4 @@ const Select = ({ options, name, id, value, onChange }) => {
       </select>
     </>
   );
-};
-
-export default Select;
+}
