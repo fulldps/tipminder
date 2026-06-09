@@ -7,7 +7,7 @@ const NAV_MENU_ITEMS = [
   { id: 4, title: "Contacts" },
 ];
 
-const Header = () => {
+export default function Header() {
   return (
     <header className={styles.header}>
       <div>
@@ -33,6 +33,4 @@ const Header = () => {
       </div>
     </header>
   );
-};
-
-export default Header;
+}

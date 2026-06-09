@@ -1,0 +1,97 @@
+.cardSection {
+  max-width: 1280px;
+}
+
+.tableWrapper {
+  border: 1px solid #d6d6d6;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: 24px;
+  font-weight: normal;
+  color: #414141;
+  width: 256px;
+}
+
+.table td {
+  padding: 24px;
+}
+
+.table td button {
+  width: 28px;
+  height: 28px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-image: linear-gradient(
+    to bottom right,
+    #eec595 0%,
+    #f1804f 52%,
+    #edd098 100%
+  );
+}
+
+.table tbody tr {
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #d6d6d6;
+  color: #565656;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.table thead {
+  background-color: #fff9f9;
+}
+
+.table thead tr {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+.statusError {
+  background: #fde8e8;
+  color: #e02424;
+}
+
+.statusActive {
+  background: #def7ec;
+  color: #057a55;
+}
+
+.statusExpired {
+  background: #f6e8ff;
+  color: #9061f9;
+}
+
+.statusSuspended {
+  background: #fdf6b2;
+  color: #8b7a00;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}

@@ -1,6 +1,6 @@
 import * as styles from "./Input.module.css";
 
-const Input = ({ name, id, type, value, onChange }) => {
+export default function Input({ name, id, type, value, onChange }) {
   return (
     <>
       <input
@@ -13,6 +13,4 @@ const Input = ({ name, id, type, value, onChange }) => {
       />
     </>
   );
-};
-
-export default Input;
+}
