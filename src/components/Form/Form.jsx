@@ -109,7 +109,6 @@ export default function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const payload = mapper(values);
-    console.log(payload);
     return payload;
   };
 
