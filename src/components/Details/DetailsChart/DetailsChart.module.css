@@ -1,0 +1,39 @@
+.chartWrapper {
+  border: 1px solid #d6d6d6;
+  border-radius: 6px 6px 0 0;
+}
+
+.chartHeader {
+  display: flex;
+  padding: 32px;
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.chartHeader h3 {
+  margin: 0;
+}
+
+.chartBody {
+}
+
+.buttonWrapper {
+  display: flex;
+  width: 162px;
+  height: 34px;
+  border: 1px solid #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.buttonWrapper button {
+  flex: 1;
+  border: none;
+}
+
+.buttonWrapper button:first-child {
+  flex: 0 0 76px;
+  border-right: 1px solid #000;
+}
