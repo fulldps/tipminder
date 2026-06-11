@@ -1,6 +1,6 @@
 .form {
   display: grid;
-  padding: 24px;
+  padding: 24px 24px 0 24px;
   grid-template-columns: 1fr 1fr;
   column-gap: 24px;
   row-gap: 20px;
@@ -9,4 +9,17 @@
 }
 
 .buttonField {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-top: 1px solid #d6d6d6;
+  margin-inline: -24px;
+  padding: 32px;
+}
+
+.buttonField button {
+  height: 44px;
+  padding-inline: 12px;
+  border-radius: 5px;
 }

@@ -137,7 +137,7 @@ export default function Form() {
           }
         </FormField>
       ))}
-      <div>
+      <div className={styles.buttonField}>
         <button type="submit">Sign contract</button>
         <button type="button">Back</button>
       </div>
