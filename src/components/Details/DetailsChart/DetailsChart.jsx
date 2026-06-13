@@ -210,7 +210,7 @@ export default function DetailsChart() {
             name="Amount of tips transferred"
             fill="url(#tipsGradient)"
           />
-          <Tooltip stroke={{ color: "#fb8f42" }} content={<ChartTooltip />} />
+          <Tooltip cursor={{ stroke: "#fb8f42" }} content={<ChartTooltip />} />
           <Legend content={<ChartLegend />} />
         </AreaChart>
       </div>

@@ -22,7 +22,7 @@ const DETAILS_CARDS = [
   {
     id: 3,
     title: "Tips transferred",
-    info: "Jackson_2",
+    info: "18292",
     linkTitle: "View details",
     link: "#",
   },
