@@ -33,12 +33,7 @@
   border: none;
   border-radius: 5px;
   color: #fff;
-  background-image: linear-gradient(
-    to bottom right,
-    #eec595 0%,
-    #f1804f 52%,
-    #edd098 100%
-  );
+  background-image: var(--gradient-primary);
 }
 
 .table tbody tr {

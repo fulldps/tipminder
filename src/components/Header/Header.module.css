@@ -19,12 +19,7 @@
   border: 1px solid #fae4d4;
   border-radius: 10px;
   color: #fff;
-  background-image: linear-gradient(
-    to bottom right,
-    #eec595 0%,
-    #f1804f 52%,
-    #edd098 100%
-  );
+  background-image: var(--gradient-primary);
 }
 
 .logo {
