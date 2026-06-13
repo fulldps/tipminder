@@ -1,11 +1,37 @@
 .header {
   display: flex;
   height: 72px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #c0c0c0;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-inline: 32px;
+}
+
+.logoutButton {
+  display: flex;
+  width: 140px;
+  height: 48px;
+  padding-inline: 16px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #fae4d4;
+  border-radius: 10px;
+  color: #fff;
+  background-image: linear-gradient(
+    to bottom right,
+    #eec595 0%,
+    #f1804f 52%,
+    #edd098 100%
+  );
+}
+
+.logo {
+  display: flex;
+  height: 36px;
+  align-items: center;
+  gap: 12px;
 }
 
 .ul {
@@ -20,4 +46,15 @@
 
 .li {
   padding-inline: 16px;
+}
+
+.title {
+  font-weight: 500;
+}
+
+.divider {
+  margin-inline: 12px;
+  width: 1px;
+  height: 48px;
+  background: #fff;
 }
