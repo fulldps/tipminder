@@ -1,0 +1,28 @@
+export default function TipMinderIcon() {
+  return (
+    <svg
+      width="22"
+      height="36"
+      viewBox="0 0 22 36"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <ellipse
+        cx="7.07019"
+        cy="17.956"
+        rx="17.956"
+        ry="7.07016"
+        transform="rotate(90 7.07019 17.956)"
+        fill="#FFB682"
+      />
+      <ellipse
+        cx="14.929"
+        cy="17.956"
+        rx="17.956"
+        ry="7.07016"
+        transform="rotate(90 14.929 17.956)"
+        fill="#FB8F42"
+      />
+    </svg>
+  );
+}

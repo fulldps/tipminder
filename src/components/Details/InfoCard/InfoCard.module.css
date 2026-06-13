@@ -1,0 +1,32 @@
+.card {
+  min-height: 110px;
+  padding: 16px 24px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+}
+
+.card a {
+  color: #fb8f42;
+  font-size: 14px;
+}
+
+.cardDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.cardDescription dt {
+  color: #959595;
+  font-size: 14px;
+}
+
+.cardDescription dd {
+  font-size: 16px;
+  margin: 0;
+  margin-inline: -4px;
+}

@@ -1,0 +1,104 @@
+.chartWrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d6d6d6;
+  border-radius: 6px 6px 0 0;
+}
+
+.chartHeader {
+  display: flex;
+  padding: 32px;
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.chartHeader h3 {
+  margin: 0;
+}
+
+.chartBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  align-items: center;
+}
+
+.lineChart {
+  width: 100%;
+  flex: 1;
+}
+
+.buttonWrapper {
+  display: flex;
+  width: 162px;
+  height: 34px;
+  border: 1px solid #c0c0c0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.buttonWrapper button {
+  flex: 1;
+  border: none;
+  font-size: 14px;
+}
+
+.buttonWrapper button:first-child {
+  flex: 0 0 76px;
+  border-right: 1px solid #c0c0c0;
+}
+
+.buttonWrapper button[aria-pressed="true"] {
+  background-color: #fb8f42;
+  color: white;
+}
+
+.tooltip {
+  position: relative;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+  filter: drop-shadow(0px 0px 4px #444);
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  left: 50%;
+  translate: -50%;
+  bottom: -4px;
+  width: 10px;
+  height: 10px;
+  rotate: 45deg;
+}
+
+.legend {
+  list-style: none;
+  margin: 32px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #5dd749;
+}
+
+.legendText {
+  color: #000;
+}
