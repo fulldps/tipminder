@@ -20,6 +20,27 @@
 
 .buttonField button {
   height: 44px;
-  padding-inline: 12px;
   border-radius: 5px;
+  padding-inline: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.signContractBtn {
+  background-color: var(--color-accent);
+  color: #fff;
+  border: none;
+}
+
+.signContractBtn:hover {
+  background-color: color-mix(in srgb, var(--color-accent), black 8%);
+}
+
+.backBtn {
+  background-color: #fff;
+  border: 2px solid #474747;
+}
+
+.backBtn:hover {
+  background-color: color-mix(in srgb, #fff, black 8%);
 }

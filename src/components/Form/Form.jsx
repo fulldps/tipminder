@@ -138,8 +138,12 @@ export default function Form() {
         </FormField>
       ))}
       <div className={styles.buttonField}>
-        <button type="submit">Sign contract</button>
-        <button type="button">Back</button>
+        <button className={styles.signContractBtn} type="submit">
+          Sign contract
+        </button>
+        <button className={styles.backBtn} type="button">
+          Back
+        </button>
       </div>
     </form>
   );
