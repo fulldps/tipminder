@@ -1,9 +1,46 @@
 .form {
   display: grid;
-  padding: 24px;
+  padding: 24px 24px 0 24px;
   grid-template-columns: 1fr 1fr;
   column-gap: 24px;
   row-gap: 20px;
   border: 1px solid #d5d5d5;
   border-radius: 12px;
+}
+
+.buttonField {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-top: 1px solid #d6d6d6;
+  margin-inline: -24px;
+  padding: 32px;
+}
+
+.buttonField button {
+  height: 44px;
+  border-radius: 5px;
+  padding-inline: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.signContractBtn {
+  background-color: var(--color-accent);
+  color: #fff;
+  border: none;
+}
+
+.signContractBtn:hover {
+  background-color: color-mix(in srgb, var(--color-accent), black 8%);
+}
+
+.backBtn {
+  background-color: #fff;
+  border: 2px solid #474747;
+}
+
+.backBtn:hover {
+  background-color: color-mix(in srgb, #fff, black 8%);
 }

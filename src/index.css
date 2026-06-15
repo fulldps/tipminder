@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+:root {
+  --gradient-primary: linear-gradient(
+    to bottom right,
+    #eec595 0%,
+    #f1804f 52%,
+    #edd098 100%
+  );
+
+  --color-accent: #fb8f42;
+}
+
 /**
   Нормализация блочной модели
  */

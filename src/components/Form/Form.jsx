@@ -109,7 +109,6 @@ export default function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const payload = mapper(values);
-    console.log(payload);
     return payload;
   };
 
@@ -138,9 +137,13 @@ export default function Form() {
           }
         </FormField>
       ))}
-      <div>
-        <button type="submit">Sign contract</button>
-        <button type="button">Back</button>
+      <div className={styles.buttonField}>
+        <button className={styles.signContractBtn} type="submit">
+          Sign contract
+        </button>
+        <button className={styles.backBtn} type="button">
+          Back
+        </button>
       </div>
     </form>
   );
