@@ -10,7 +10,7 @@
 }
 
 .card a {
-  color: #fb8f42;
+  color: var(--color-accent);
   font-size: 14px;
 }
 

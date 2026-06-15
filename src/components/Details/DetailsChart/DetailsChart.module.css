@@ -53,7 +53,7 @@
 }
 
 .buttonWrapper button[aria-pressed="true"] {
-  background-color: #fb8f42;
+  background-color: var(--color-accent);
   color: white;
 }
 
