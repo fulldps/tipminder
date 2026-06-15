@@ -7,6 +7,10 @@
   align-items: center;
   padding-inline: 32px;
 }
+.link {
+  text-decoration: none;
+  color: inherit;
+}
 
 .logoutButton {
   display: flex;

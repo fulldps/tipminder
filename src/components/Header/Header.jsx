@@ -2,29 +2,33 @@ import TipMinderIcon from "./TipMinderIcon";
 import UserIcon from "./UserIcon";
 
 import * as styles from "./Header.module.css";
+import { Link, NavLink } from "react-router-dom";
 
 const NAV_MENU_ITEMS = [
-  { id: 0, title: "About" },
-  { id: 1, title: "General condition" },
-  { id: 2, title: "Price list" },
-  { id: 3, title: "FAQ" },
-  { id: 4, title: "Contacts" },
+  { id: 0, title: "About", to: "#" },
+  { id: 1, title: "General condition", to: "#" },
+  { id: 2, title: "Price list", to: "#" },
+  { id: 3, title: "FAQ", to: "#" },
+  { id: 4, title: "Contacts", to: "#" },
+  { id: 5, title: "Agreement", to: "/agreement" },
 ];
 
 export default function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>
-        <TipMinderIcon />
-        <div className={styles.title}>TipMinder</div>
-      </div>
+      <Link to="/cards" className={styles.link}>
+        <div className={styles.logo}>
+          <TipMinderIcon />
+          <div className={styles.title}>TipMinder</div>
+        </div>
+      </Link>
       <nav>
         <ul className={styles.ul}>
           {NAV_MENU_ITEMS.map((i) => (
             <li className={styles.li} key={i.id}>
-              <a className={styles.a} href="#">
+              <Link className={styles.a} to={i.to}>
                 {i.title}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

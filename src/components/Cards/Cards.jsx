@@ -1,32 +1,33 @@
 import GoToIcon from "./GoToIcon";
 import LockIcon from "./LockIcon";
+import { Link } from "react-router-dom";
 
 import * as styles from "./Cards.module.css";
 
 const MOCK_CARDS = [
   {
-    id: crypto.randomUUID(),
+    id: "1",
     number: "1",
     cardNumber: "1234 1248 8987 1923",
     status: "Error",
     validTill: "12/12/2023",
   },
   {
-    id: crypto.randomUUID(),
+    id: "2",
     number: "2",
     cardNumber: "1234 1248 8987 1923",
     status: "Active",
     validTill: "12/12/2023",
   },
   {
-    id: crypto.randomUUID(),
+    id: "3",
     number: "3",
     cardNumber: "1234 1248 8987 1923",
     status: "Expired",
     validTill: "12/12/2023",
   },
   {
-    id: crypto.randomUUID(),
+    id: "4",
     number: "4",
     cardNumber: "1234 1248 8987 1923",
     status: "Suspended",
@@ -71,9 +72,13 @@ export default function Cards() {
                 <td>{card.validTill}</td>
                 <td>
                   <div className={styles.buttonWrapper}>
-                    <button aria-label="Go to card">
+                    <Link
+                      to={`/cards/${card.id}`}
+                      aria-label="Go to card"
+                      className={styles.link}
+                    >
                       <GoToIcon />
-                    </button>
+                    </Link>
                     <button aria-label="Block card">
                       <LockIcon />
                     </button>
