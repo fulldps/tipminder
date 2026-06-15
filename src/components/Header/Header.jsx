@@ -33,7 +33,7 @@ export default function Header() {
         <button type="button" className={styles.logoutButton}>
           <UserIcon />
           <span className={styles.divider} />
-          <span>Log out</span>
+          <span className={styles.logoutText}>Log out</span>
         </button>
       </div>
     </header>
