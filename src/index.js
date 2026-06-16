@@ -1,12 +1,15 @@
+import { lazy } from "react";
 import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
-import { store } from "./app/store.js";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+
+import { store } from "./app/store.js";
 import App from "./App.jsx";
 import "./index.css";
-import FormPage from "./pages/FormPage.jsx";
-import CardsPage from "./pages/CardsPage.jsx";
-import DetailsPage from "./pages/DetailsPage.jsx";
+
+const FormPage = lazy(() => import("./pages/FormPage.jsx"));
+const CardsPage = lazy(() => import("./pages/CardsPage.jsx"));
+const DetailsPage = lazy(() => import("./pages/DetailsPage.jsx"));
 
 const root = createRoot(document.getElementById("root"));
 

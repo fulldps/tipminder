@@ -9,8 +9,15 @@ module.exports = {
   output: {
     path: path.resolve(root, "dist"),
     filename: "[name].[contenthash].js",
+    chunkFilename: "[name].[contenthash].js",
     clean: true,
     publicPath: "/",
+  },
+
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
   },
 
   resolve: {
