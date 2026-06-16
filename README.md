@@ -39,4 +39,4 @@ Some DummyJSON data doesn't match the design, so the card status is derived from
 
 ## Deploy
 
-<!-- link will be added after deploy -->
+<https://tipminder.netlify.app/cards>
