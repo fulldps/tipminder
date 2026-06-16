@@ -16,7 +16,7 @@ export default function Details({ user }) {
     {
       id: 2,
       title: "Card",
-      info: user.bank.cardNumber,
+      info: user.bank.cardNumber.match(/.{1,4}/g).join(" "),
       linkTitle: "See other cards",
       link: "#",
     },

@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  position: relative;
   height: 72px;
   border-bottom: 1px solid #c0c0c0;
   flex-direction: row;
@@ -63,4 +64,56 @@
   width: 1px;
   height: 48px;
   background: #fff;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.burger {
+  display: none;
+  border: none;
+  background: none;
+  padding: 4px;
+  color: #414141;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-inline: 16px;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    background: #fff;
+    border-bottom: 1px solid #c0c0c0;
+  }
+
+  .ulOpen {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .logoutButton {
+    width: auto;
+  }
+
+  .logoutText,
+  .divider {
+    display: none;
+  }
 }

@@ -15,3 +15,9 @@
   margin-inline: auto;
   flex: 1;
 }
+
+@media (max-width: 768px) {
+  .main {
+    padding-inline: 16px;
+  }
+}

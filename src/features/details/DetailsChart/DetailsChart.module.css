@@ -102,3 +102,15 @@
 .legendText {
   color: #000;
 }
+
+@media (max-width: 480px) {
+  .chartHeader {
+    flex-wrap: wrap;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .chartBody {
+    padding: 16px;
+  }
+}
