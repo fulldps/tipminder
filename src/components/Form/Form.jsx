@@ -1,7 +1,7 @@
 import { useState } from "react";
-import FormField from "../FormField/FormField";
-import Input from "../Input/Input";
-import Select from "../Select/Select";
+import FormField from "../ui/FormField/FormField";
+import Input from "../ui/Input/Input";
+import Select from "../ui/Select/Select";
 import * as styles from "./Form.module.css";
 
 const OPTIONS = {
