@@ -46,3 +46,10 @@
 .table thead tr {
   border-bottom: 1px solid #d6d6d6;
 }
+
+@media (max-width: 480px) {
+  .table th,
+  .table td {
+    padding: 16px;
+  }
+}

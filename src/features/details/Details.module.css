@@ -15,7 +15,8 @@
 
 .cardsRow {
   background-color: #fff;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 16px;
   margin-bottom: 16px;
 }
@@ -25,4 +26,16 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .chartAndTable {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .detailsSection {
+    padding: 16px 16px 0;
+  }
 }

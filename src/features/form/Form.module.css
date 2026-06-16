@@ -44,3 +44,20 @@
 .backBtn:hover {
   background-color: color-mix(in srgb, #fff, black 8%);
 }
+
+@media (max-width: 768px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 16px 16px 0;
+  }
+
+  .buttonField {
+    margin-inline: -16px;
+    padding: 24px 16px;
+  }
+}

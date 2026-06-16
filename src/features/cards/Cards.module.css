@@ -102,18 +102,41 @@
 }
 
 .filterWrapper {
-  margin: 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
 }
 
 .filterButton {
-  border: none;
   padding: 8px 16px;
-  background-color: #d3d3d3;
+  border: 1px solid #d6d6d6;
   border-radius: 999px;
-  margin-left: 12px;
+  background-color: #fff;
+  color: #565656;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .filterButton[aria-pressed="true"] {
   background-color: var(--color-accent);
+  border-color: var(--color-accent);
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .tableWrapper {
+    overflow-x: auto;
+  }
+
+  .table {
+    min-width: 760px;
+  }
+}
+
+@media (max-width: 480px) {
+  .table th,
+  .table td {
+    padding: 16px;
+  }
 }

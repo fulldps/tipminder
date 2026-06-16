@@ -1,8 +1,11 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import TipMinderIcon from "../../icons/TipMinderIcon";
 import UserIcon from "../../icons/UserIcon";
+import BurgerIcon from "../../icons/BurgerIcon";
 
 import * as styles from "./Header.module.css";
-import { Link } from "react-router-dom";
 
 const NAV_MENU_ITEMS = [
   { id: 0, title: "About", to: "#" },
@@ -14,6 +17,8 @@ const NAV_MENU_ITEMS = [
 ];
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className={styles.header}>
       <Link to="/cards" className={styles.link}>
@@ -23,17 +28,30 @@ export default function Header() {
         </div>
       </Link>
       <nav>
-        <ul className={styles.ul}>
+        <ul className={`${styles.ul} ${menuOpen ? styles.ulOpen : ""}`}>
           {NAV_MENU_ITEMS.map((i) => (
             <li className={styles.li} key={i.id}>
-              <Link className={styles.a} to={i.to}>
+              <Link
+                className={styles.a}
+                to={i.to}
+                onClick={() => setMenuOpen(false)}
+              >
                 {i.title}
               </Link>
             </li>
           ))}
         </ul>
       </nav>
-      <div>
+      <div className={styles.actions}>
+        <button
+          type="button"
+          className={styles.burger}
+          aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          <BurgerIcon />
+        </button>
         <button type="button" className={styles.logoutButton}>
           <UserIcon />
           <span className={styles.divider} />
