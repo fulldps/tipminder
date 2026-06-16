@@ -1,20 +1,15 @@
-import Header from "./components/Header/Header";
-import Form from "./components/Form/Form";
-import Footer from "./components/Footer/Footer";
-import Cards from "./components/Cards/Cards";
-import Details from "./components/Details/Details";
+import Header from "./components/layout/Header/Header";
+import Footer from "./components/layout/Footer/Footer";
 
 import * as styles from "./App.module.css";
+import { Outlet } from "react-router-dom";
 
 export default function App() {
   return (
     <div className={styles.body}>
       <Header />
       <main className={styles.main}>
-        <h1>Merchant agreement</h1>
-        <Form />
-        <Cards />
-        <Details />
+        <Outlet />
       </main>
       <Footer />
     </div>

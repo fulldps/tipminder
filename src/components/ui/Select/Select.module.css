@@ -1,0 +1,13 @@
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,<svg width='8' height='4' viewBox='0 0 8 4' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M4 4L0 0H8L4 4Z' fill='%23414141'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 24px center;
+  max-width: 584px;
+  width: 100%;
+  height: 54px;
+  padding: 16px;
+  border: 1.5px solid #d5d5d5;
+  border-radius: 12px;
+}

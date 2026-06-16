@@ -90,3 +90,30 @@
   flex-direction: row;
   gap: 12px;
 }
+
+.link {
+  width: 28px;
+  height: 28px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-image: var(--gradient-primary);
+}
+
+.filterWrapper {
+  margin: 12px 0;
+}
+
+.filterButton {
+  border: none;
+  padding: 8px 16px;
+  background-color: #d3d3d3;
+  border-radius: 999px;
+  margin-left: 12px;
+}
+
+.filterButton[aria-pressed="true"] {
+  background-color: var(--color-accent);
+  color: #fff;
+}
