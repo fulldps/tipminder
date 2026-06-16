@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import Details from "../components/Details/Details";
+import Details from "../features/details/Details";
 import { useGetUserQuery } from "../app/api";
 
 export default function DetailsPage() {
