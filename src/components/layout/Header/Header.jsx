@@ -1,5 +1,5 @@
-import TipMinderIcon from "./TipMinderIcon";
-import UserIcon from "./UserIcon";
+import TipMinderIcon from "../../icons/TipMinderIcon";
+import UserIcon from "../../icons/UserIcon";
 
 import * as styles from "./Header.module.css";
 import { Link } from "react-router-dom";

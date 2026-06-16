@@ -1,5 +1,5 @@
-import GoToIcon from "./GoToIcon";
-import LockIcon from "./LockIcon";
+import GoToIcon from "../../components/icons/GoToIcon";
+import LockIcon from "../../components/icons/LockIcon";
 import { Link } from "react-router-dom";
 
 import * as styles from "./Cards.module.css";
