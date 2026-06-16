@@ -44,11 +44,14 @@
 
 .a {
   text-decoration: none;
-  color: inherit;
+  color: gray;
 }
 
 .li {
   padding-inline: 16px;
+}
+.li:last-child a {
+  color: inherit;
 }
 
 .title {

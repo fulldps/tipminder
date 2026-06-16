@@ -2,7 +2,7 @@ import TipMinderIcon from "./TipMinderIcon";
 import UserIcon from "./UserIcon";
 
 import * as styles from "./Header.module.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NAV_MENU_ITEMS = [
   { id: 0, title: "About", to: "#" },
